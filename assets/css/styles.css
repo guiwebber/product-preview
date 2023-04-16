@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-family: "Fraunces", serif;
+  display: inline-block;
+  margin: 10px;
+}
+.image {
+  background-image: url(../../images/image-product-desktop.jpg);
+  width: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px 0 0 5px;
+}
+button {
+  display: block;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  margin: 10px;
+}
+button p {
+  margin: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(157, 29%, 21%);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: hsl(32, 12%, 79%);
+}
+.main {
+  width: 600px;
+  height: 452px;
+  border-radius: 10px;
+  display: flex;
+  background-color: white;
+}
+
+.description {
+  padding: 10px;
+}
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 10px;
+}
+.price {
+  color: hsl(158, 36%, 37%);
+  margin: 30px 10px;
+}
+.promo {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin: 43px 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.prices {
+  display: flex;
+}
+.textDescription {
+  margin: 10px;
+  color: hsl(228, 12%, 48%);
+}
+
+@media (max-width: 476px) {
+ .image {
+  background-image: url(../../images/image-product-mobile.jpg);
+  width: 350px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px 0 0 5px;
+}.main {
+  width: 350px;
+  height: 80vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: auto;
+  width: 300px;margin-bottom: 20px;
+}
+}
